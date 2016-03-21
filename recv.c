@@ -95,7 +95,7 @@ void recv_packet(int seqno, int len, char *data, FILE *ofile, int strategy) {
 
 	  /* Beginning of code by Sergiu Tripon */
 
-	  // calculate gap
+	  // calculate the gap
 	  int gap = (seqno - 1) - prev_seqno;
 
 	  // calculate steps
@@ -108,9 +108,9 @@ void recv_packet(int seqno, int len, char *data, FILE *ofile, int strategy) {
 	  // fill the gap with the last half of the previous packet, except the penultimate and last sample
 	  fwrite(prev_packet_samples + 160, 2, 158, ofile);
 
-	  // calculate last sample of the previous packet
+	  // calculate the last sample of the previous packet
 	  short int last_sample = ((prev_packet_samples[319] * two_samples2) + (samples[0] * two_samples1));
-	  // calculate penultimate sample from the previous packet, based on the last sample
+	  // calculate the penultimate sample from the previous packet, based on the last sample
 	  short int penultimate_sample = ((prev_packet_samples[318] * one_sample) + (last_sample * one_sample));
 
 	  // fill the gap with the penultimate sample of the previous packet
