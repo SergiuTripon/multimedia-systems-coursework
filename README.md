@@ -1,1 +1,1 @@
-# Multimedia Systems - Assignment
+# Multimedia Systems - Coursework
