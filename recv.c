@@ -121,9 +121,52 @@ void recv_packet(int seqno, int len, char *data, FILE *ofile, int strategy) {
       {
 	/* We're going to interpolate a whole new packet (or several packets) in the frequency domain. */
 
-	/****************************************************************/
-	/******************* your code goes here ************************/
-	/****************************************************************/
+	/* Beginning of code by Sergiu Tripon */
+	int gap = (seqno - 1) - prev_seqno;
+	if (gap <= 3) {
+	  int *dct_before = dct(prev_packet_samples, num_samples);
+	  int *dct_after = dct(samples, num_samples);
+	  if (gap == 1) {
+	    //printf("gap: %d\n", gap);
+	    missing_seqno = prev_seqno + 1;
+	    //printf("missing_seqno: %d\n", missing_seqno);
+	    //printf("seqno: %d\n", seqno);
+	    while (missing_seqno < seqno) {
+	      int new_set[320];
+	      for(int i = 0; i < 320; i++) {
+	        //printf("num_samples: %d\n", num_samples);
+	        new_set[i] = (dct_before[i] + dct_after[i]) / 2;
+	      }
+	      fwrite(idct(new_set, 320), 2, 320, ofile);
+	      missing_seqno++;
+	    }
+	  } else if (gap == 2 || gap == 3) {
+	    //printf("gap: %d\n", gap);
+	    missing_seqno = prev_seqno + 1;
+	    //printf("missing_seqno: %d\n", missing_seqno);
+	    //printf("seqno: %d\n", seqno);
+	    while (missing_seqno < seqno) {
+	      int new_set[320];
+	      double weighted_avg_before = (double) (missing_seqno - prev_seqno) / (seqno - prev_seqno);
+	      double weighted_avg_after = (double) (seqno - missing_seqno) / (seqno - prev_seqno);
+	      for(int i = 0; i < 320; i++) {
+	        new_set[i] = (weighted_avg_before * dct_before[i]) + (weighted_avg_after * dct_after[i]);
+	      }
+	      fwrite(idct(new_set, 320), 2, 320, ofile);
+	      missing_seqno++;
+	    }
+	  }
+	} else if (gap > 3) {
+	  //printf("gap: %d\n", gap);
+	  missing_seqno = prev_seqno + 1;
+	  //printf("missing_seqno: %d\n", missing_seqno);
+	  //printf("seqno: %d\n", seqno);
+	  while (missing_seqno < seqno) {
+	    write_silence(ofile, 320);
+	    missing_seqno++;
+	  }
+	}
+	/* End of code by Sergiu Tripon */
 
 	break;
       }
