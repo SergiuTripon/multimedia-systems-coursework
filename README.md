@@ -1,1 +1,1 @@
-# multimedia-systems-assignment
+# Multimedia Systems - Assignment
