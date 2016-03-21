@@ -90,12 +90,32 @@ void recv_packet(int seqno, int len, char *data, FILE *ofile, int strategy) {
 	  /* fill with last half of prev packet, first half of current packet */
 
 	  /* uncomment the next line to enable smoothing*/
-/* #define SMOOTH */
+#define SMOOTH
 #ifdef SMOOTH
-	  /****************************************************************/
-	  /******************* your code goes here ************************/
-	  /* (add any extra functions you define to the top of this file) */
-	  /****************************************************************/
+
+	  /* Beginning of code by Sergiu Tripon */
+	  int gap = (seqno - 1) - prev_seqno;
+	  float one_sample = ((float) 1 / (gap + 1));
+	  float two_samples1 = ((float) 1 / (gap + 2));
+	  float two_samples2 = ((float) two_samples1 * 2);
+
+	  fwrite(prev_packet_samples + 160, 2, 158, ofile);
+
+	  int16_t last_sample = ((prev_packet_samples[319] * two_samples2) + (samples[0] * two_samples1));
+	  int16_t penultimate_sample = ((prev_packet_samples[318] * one_sample) + (last_sample * one_sample));
+
+	  fwrite(&penultimate_sample, 2, 1, ofile);
+	  fwrite(&last_sample, 2, 1, ofile);
+
+	  int16_t first_sample = ((prev_packet_samples[319] * two_samples1) + (samples[0] * two_samples2));
+	  int16_t second_sample = ((first_sample * one_sample) + (samples[1] * one_sample));
+
+	  fwrite(&first_sample, 2, 1, ofile);
+	  fwrite(&second_sample, 2, 1, ofile);
+
+	  fwrite(samples, 2, 158, ofile);
+	  /* End of code by Sergiu Tripon */
+
 #else
 	  fwrite(prev_packet_samples+num_samples/2, 2, num_samples/2, ofile);
 	  fwrite(samples, 2, num_samples/2, ofile);
