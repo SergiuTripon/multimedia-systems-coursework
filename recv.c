@@ -256,6 +256,7 @@ void recv_packet(int seqno, int len, char *data, FILE *ofile, int strategy) {
 	    missing_seqno++;
 	  }
 	}
+
 	/* End of code by Sergiu Tripon */
 
 	break;
