@@ -53,6 +53,6 @@ cd multimedia-systems-coursework
 make
 
 # run compiled program loss_sim and specify parameters
-loss_sim --parameter
+loss_sim --param
 
 ```
