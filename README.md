@@ -11,7 +11,7 @@ Repository contents:
 
 #####Assignment Brief
 
-The aim of this assignment was to experiment with
+The aim of this assignment was to experiment with:
 * repairing packet loss with packet audio
 * applying DCT (Discrete Cosine Transform)
 * get a feel for the effect of discontinuities on how audio sounds
