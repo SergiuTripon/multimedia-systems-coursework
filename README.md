@@ -2,6 +2,13 @@
 
 This is an assigment I completed as part of the Multimedia Systems module (MSc Web Science and Big Data Analytics) I undertook at UCL.
 
+Repository contents:
+* C source code
+* output folder storing output files after running the code
+* Report source code in LaTeX
+
+---
+
 #####Assignment Brief
 
 The aim of this assignment was to experiment with
@@ -16,14 +23,36 @@ The assignment consisted of two tasks:
 * Implement a repair strategy: interpolation
 * Apply smoothing in order to fix clicks in the audio
 
+---
+
 #####Task 1
 
 The example screenshot below shows the difference in audio waveform before and after interpolation was applied. Interpolation involves reconstructing the first packet in such a way that it sounds more like the packet from before the loss gap while reconstructing the last packet in a way that it sounds more like the packet from after the gap.
 
 ![alt text](https://github.com/SergiuTripon/multimedia-systems-coursework/blob/master/report-src/figures/interpolation.png "Interpolation")
 
+---
+
 #####Task 2
 
 The example screenshot below shows the difference in audio waveform before and after smoothing was applied. I chose to smooth out the audio by "pulling" the two ends of a packet together.
 
 ![alt text](https://github.com/SergiuTripon/multimedia-systems-coursework/blob/master/report-src/figures/smoothing.png "Smoothing")
+
+---
+
+#####Instructions
+
+To run the source code, follow the steps below:
+
+```bash
+# navigate to multimedia-systems-coursework folder
+cd multimedia-systems-coursework
+
+# compile the source code
+make
+
+# run compiled program loss_sim and specify parameters
+loss_sim --parameter
+
+```
