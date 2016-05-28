@@ -1,6 +1,6 @@
 #### Multimedia Systems Assignment - Packet Loss
 
-This is an assigment I completed as part of the Multimedia Systems module (MSc Web Science and Big Data Analytics) I undertook at UCL.
+This is an assigment I completed as part of the [COMPGZ05 - Multimedia Systems](http://www.cs.ucl.ac.uk/teaching_learning/syllabus/mscncs/gz05_multimedia_systems/) module (MSc Web Science and Big Data Analytics) which I undertook at UCL.
 
 Repository contents:
 * C source code
