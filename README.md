@@ -3,7 +3,7 @@
 This is an assigment I completed as part of the [COMPGZ05 - Multimedia Systems](http://www.cs.ucl.ac.uk/teaching_learning/syllabus/mscncs/gz05_multimedia_systems/) module (MSc Web Science and Big Data Analytics) which I undertook at UCL.
 
 Repository contents:
-* C source code
+* Source code in C
 * output folder storing output files after running the code
 * Report source code in LaTeX, and report in PDF format
 
@@ -29,7 +29,7 @@ The assignment consisted of two tasks:
 
 The example screenshot below shows the difference in audio waveform before and after interpolation was applied. Interpolation involves reconstructing the first packet in such a way that it sounds more like the packet from before the loss gap while reconstructing the last packet in a way that it sounds more like the packet from after the gap.
 
-![alt text](https://github.com/SergiuTripon/multimedia-systems-coursework/blob/master/report-src/figures/interpolation.png "Interpolation")
+![alt text](https://github.com/SergiuTripon/multimedia-systems-packet-loss/blob/master/report/src/figures/interpolation.png "Interpolation")
 
 ---
 
@@ -37,7 +37,7 @@ The example screenshot below shows the difference in audio waveform before and a
 
 The example screenshot below shows the difference in audio waveform before and after smoothing was applied. I chose to smooth out the audio by "pulling" the two ends of a packet together.
 
-![alt text](https://github.com/SergiuTripon/multimedia-systems-coursework/blob/master/report-src/figures/smoothing.png "Smoothing")
+![alt text](https://github.com/SergiuTripon/multimedia-systems-packet-loss/blob/master/report/src/figures/smoothing.png "Smoothing")
 
 ---
 
