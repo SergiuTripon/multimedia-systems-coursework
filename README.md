@@ -1,6 +1,6 @@
-### Multimedia Systems Assignment - Packet Loss
+### Multimedia Systems - Packet Loss - Assignment Code
 
-This is the assigment I completed as part of the [COMPGZ05 - Multimedia Systems](http://www.cs.ucl.ac.uk/teaching_learning/syllabus/mscncs/gz05_multimedia_systems/) module (MSc Web Science and Big Data Analytics) which I undertook at University College London.
+This is the code of the assignment I completed as part of the [COMPGZ05 - Multimedia Systems](http://www.cs.ucl.ac.uk/teaching_learning/syllabus/mscncs/gz05_multimedia_systems/) module (MSc Web Science and Big Data Analytics) which I undertook at University College London.
 
 ---
 
