@@ -34,6 +34,8 @@ The example screenshot below shows the difference in audio waveform before and a
 
 ![alt text](https://github.com/SergiuTripon/multimedia-systems-packet-loss-report/blob/master/figures/interpolation.png "Interpolation")
 
+[Enlarge image](https://github.com/SergiuTripon/multimedia-systems-packet-loss-report/blob/master/figures/interpolation.png?raw=true)
+
 ---
 
 #### Task 2
@@ -41,6 +43,8 @@ The example screenshot below shows the difference in audio waveform before and a
 The example screenshot below shows the difference in audio waveform before and after smoothing was applied. I chose to smooth out the audio by "pulling" the two ends of a packet together.
 
 ![alt text](https://github.com/SergiuTripon/multimedia-systems-packet-loss-report/blob/master/figures/smoothing.png "Smoothing")
+
+[Enlarge image](https://github.com/SergiuTripon/multimedia-systems-packet-loss-report/blob/master/figures/smoothing.png?raw=true)
 
 ---
 
