@@ -1,4 +1,4 @@
-#### Multimedia Systems Assignment - Packet Loss
+### Multimedia Systems Assignment - Packet Loss
 
 This is an assigment I completed as part of the [COMPGZ05 - Multimedia Systems](http://www.cs.ucl.ac.uk/teaching_learning/syllabus/mscncs/gz05_multimedia_systems/) module (MSc Web Science and Big Data Analytics) which I undertook at UCL.
 
@@ -9,7 +9,7 @@ Repository contents:
 
 ---
 
-#####Assignment Brief
+#### Assignment Brief
 
 The aim of this assignment was to experiment with:
 * repairing packet loss with packet audio
@@ -25,7 +25,7 @@ The assignment consisted of two tasks:
 
 ---
 
-#####Task 1
+#### Task 1
 
 The example screenshot below shows the difference in audio waveform before and after interpolation was applied. Interpolation involves reconstructing the first packet in such a way that it sounds more like the packet from before the loss gap while reconstructing the last packet in a way that it sounds more like the packet from after the gap.
 
@@ -33,7 +33,7 @@ The example screenshot below shows the difference in audio waveform before and a
 
 ---
 
-#####Task 2
+#### Task 2
 
 The example screenshot below shows the difference in audio waveform before and after smoothing was applied. I chose to smooth out the audio by "pulling" the two ends of a packet together.
 
@@ -41,7 +41,7 @@ The example screenshot below shows the difference in audio waveform before and a
 
 ---
 
-#####Instructions
+#### Instructions
 
 To run the source code, follow the steps below:
 
