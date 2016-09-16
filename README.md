@@ -2,7 +2,10 @@
 
 This is an assigment I completed as part of the [COMPGZ05 - Multimedia Systems](http://www.cs.ucl.ac.uk/teaching_learning/syllabus/mscncs/gz05_multimedia_systems/) module (MSc Web Science and Big Data Analytics) which I undertook at UCL.
 
-Repository contents:
+---
+
+#### Repository contents
+
 * Source code in C
 * output folder storing output files after running the code
 * Report in PDF format
