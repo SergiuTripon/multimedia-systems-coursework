@@ -5,7 +5,7 @@ This is an assigment I completed as part of the [COMPGZ05 - Multimedia Systems](
 Repository contents:
 * Source code in C
 * output folder storing output files after running the code
-* Report source code in LaTeX, and report in PDF format
+* Report in PDF format
 
 ---
 
