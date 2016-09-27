@@ -8,7 +8,7 @@ This is the code of the assignment I completed as part of the [COMPGZ05 - Multim
 
 * Source code in C
 * output folder storing output files after running the code
-* Assignment report in PDF format
+* [Assignment report](https://github.com/SergiuTripon/multimedia-systems-packet-loss/blob/master/report/tripon_sergiu_compm034_cw.pdf) in PDF format
 
 ---
 
