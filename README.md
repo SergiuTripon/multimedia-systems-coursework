@@ -1,6 +1,6 @@
-### Multimedia Systems - Packet Loss - Assignment Code
+### Multimedia Systems - Assignment - Packet Loss - Source code
 
-This is the code of the assignment I completed as part of the [COMPGZ05 - Multimedia Systems](http://www.cs.ucl.ac.uk/teaching_learning/syllabus/mscncs/gz05_multimedia_systems/) module (MSc Web Science and Big Data Analytics) which I undertook at University College London.
+Source code of the assignment completed as part of the [COMPGZ05 - Multimedia Systems](http://www.cs.ucl.ac.uk/teaching_learning/syllabus/mscncs/gz05_multimedia_systems/) module (MSc Web Science and Big Data Analytics) at [University College London](http://www.ucl.ac.uk/).
 
 ---
 
@@ -8,11 +8,11 @@ This is the code of the assignment I completed as part of the [COMPGZ05 - Multim
 
 * Source code in C
 * output folder storing output files after running the code
-* [Assignment report](https://github.com/SergiuTripon/multimedia-systems-packet-loss/blob/master/report/tripon_sergiu_compm034_cw.pdf) in PDF format
+* [Report](https://github.com/SergiuTripon/multimedia-systems-packet-loss/blob/master/report/tripon_sergiu_compm034_cw.pdf) in PDF format
 
 ---
 
-#### Assignment Brief
+#### Assignment brief
 
 The aim of this assignment was to experiment with:
 * repairing packet loss with packet audio
